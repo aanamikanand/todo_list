@@ -1,0 +1,10 @@
+<h1> Add a new Todo list </h1>
+<%= form_for @item do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<%= f.label :description %>
+	<%= f.text_area :description %>
+	<%= f.label :complete %>
+	<%= f.check_box :complete %>
+<%= f.submit %>
+<% end %>
